@@ -55,3 +55,7 @@ how to create a maven webapp
 ![](./images/Screen%20Shot%202022-04-09%20at%2010.00.01%20AM.png)
 ![](./images/Screen%20Shot%202022-04-09%20at%2010.00.54%20AM.png)
 ![](./images/Screen%20Shot%202022-04-09%20at%2010.01.40%20AM.png)
+
+### Servlet
+
+![](./images/Screen%20Shot%202022-04-09%20at%2011.21.41%20AM.png)
