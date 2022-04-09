@@ -59,3 +59,14 @@ how to create a maven webapp
 ### Servlet
 
 ![](./images/Screen%20Shot%202022-04-09%20at%2011.21.41%20AM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2011.26.54%20AM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2011.27.08%20AM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2011.28.02%20AM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2011.28.33%20AM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2011.28.49%20AM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2012.26.07%20PM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2012.39.42%20PM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2012.39.51%20PM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2012.39.59%20PM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2012.40.07%20PM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2012.40.16%20PM.png)
