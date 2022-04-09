@@ -38,3 +38,7 @@ how to create a maven webapp
 ### Add servlet dependency
 
 ![](./images/Screen%20Shot%202022-04-09%20at%206.38.13%20AM.png)
+
+### Add JSP(JavaServe Pages) denpendency
+
+![](./images/Screen%20Shot%202022-04-09%20at%206.44.54%20AM.png)
