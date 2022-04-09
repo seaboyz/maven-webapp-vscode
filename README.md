@@ -34,3 +34,7 @@ how to create a maven webapp
 ---
 
 ![](./images/Screen%20Shot%202022-04-09%20at%206.28.54%20AM.png)
+
+### Add servlet dependency
+
+![](./images/Screen%20Shot%202022-04-09%20at%206.38.13%20AM.png)
