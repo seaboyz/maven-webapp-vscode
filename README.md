@@ -47,3 +47,11 @@ how to create a maven webapp
 
 - mvn compile
 - mvn package
+
+### Start Tomcat
+
+![](./images/Screen%20Shot%202022-04-09%20at%207.00.24%20AM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%209.58.50%20AM.png`)
+![](./images/Screen%20Shot%202022-04-09%20at%2010.00.01%20AM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2010.00.54%20AM.png)
+![](./images/Screen%20Shot%202022-04-09%20at%2010.01.40%20AM.png)
