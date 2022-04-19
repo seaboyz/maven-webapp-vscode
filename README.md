@@ -61,6 +61,17 @@ how to create a maven webapp
 ![](./images/Screen%20Shot%202022-04-18%20at%207.07.42%20PM.png)
 ![](./images/Screen%20Shot%202022-04-18%20at%207.08.05%20PM.png)
 
+### context is the war file name
+
+![](./images/Screen%20Shot%202022-04-18%20at%208.12.32%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%208.29.28%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%208.30.23%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%208.31.46%20PM.png)
+
+### route is the servlet url
+
+![](./images/Screen%20Shot%202022-04-18%20at%208.37.21%20PM.png)
+
 ### Start Tomcat
 
 ![](./images/Screen%20Shot%202022-04-09%20at%207.00.24%20AM.png)
