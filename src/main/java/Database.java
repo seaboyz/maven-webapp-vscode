@@ -8,14 +8,14 @@ public class Database {
   private Database() {
   };
 
-  public Connection getConnection() throws SQLException {
+  public static Connection getConnection() throws SQLException {
     if (connection == null) {
       init();
     }
     return connection;
   }
 
-  private void init() throws SQLException {
+  private static void init() throws SQLException {
     String dbDriver = "org.postgresql.Driver";
     String dbURL = "jdbc:postgresql://training-postgres.ckbqjaef5nqv.us-east-2.rds.amazonaws.com/qianggao-p1";
     String username = "postgres";
