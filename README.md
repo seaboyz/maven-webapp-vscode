@@ -61,6 +61,10 @@ how to create a maven webapp
 ![](./images/Screen%20Shot%202022-04-18%20at%207.07.42%20PM.png)
 ![](./images/Screen%20Shot%202022-04-18%20at%207.08.05%20PM.png)
 
+### pom artifactid is the war file name
+
+![](./images/Screen%20Shot%202022-04-19%20at%206.32.25%20AM.png)
+
 ### context is the war file name
 
 ![](./images/Screen%20Shot%202022-04-18%20at%208.12.32%20PM.png)
@@ -72,7 +76,7 @@ how to create a maven webapp
 
 ![](./images/Screen%20Shot%202022-04-18%20at%208.37.21%20PM.png)
 
-# remove war file from server
+### remove war file from server
 
 ![](./images/Screen%20Shot%202022-04-18%20at%208.40.42%20PM.png)
 
