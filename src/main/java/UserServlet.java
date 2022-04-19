@@ -14,6 +14,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.Gson;
+
 @WebServlet(urlPatterns = "/users")
 public class UserServlet extends HttpServlet {
 
@@ -74,22 +76,16 @@ public class UserServlet extends HttpServlet {
         }
       }
 
-      out.print(user);
-
-      // // convert resultSet to JSON
-      // String userJsonString = new Gson().toJson(user);
-
-      // // send json as response
-      // PrintWriter out = response.getWriter();
-      // response.setContentType("application/json");
-      // response.setCharacterEncoding("UTF-8");
-      // out.print(userJsonString);
-      // out.flush();
+      // convert resultSet to JSON
+      String userJsonString = new Gson().toJson(user);
+      response.setContentType("application/json");
+      response.setCharacterEncoding("UTF-8");
+      out.print(userJsonString);
+      out.flush();
 
       connection.close();
     } catch (SQLException e) {
       System.out.println("UserServlet.doGet() SQLException: " + e.getMessage());
     }
-
   }
 }
