@@ -1,6 +1,10 @@
 
 import java.io.IOException;
+import java.io.PrintWriter;
 import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
@@ -40,47 +44,52 @@ public class UserServlet extends HttpServlet {
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
-    int userId = Integer.valueOf(request.getParameter("id"));
+    try {
+      connection = Database.getConnection();
 
-    // try {
-    // connection = Database.getConnection();
-    // PreparedStatement preparedStatement = connection
-    // .prepareStatement("SELECT * FROM ERS_USERS WHERE ERS_USER_ID = ?");
-    // preparedStatement.setInt(1, Integer.valueOf(request.getParameter("id")));
-    // ResultSet resultSet = preparedStatement.executeQuery();
+      PrintWriter out = response.getWriter();
 
-    // User user = new User();
-    // ;
+      PreparedStatement preparedStatement = connection
+          .prepareStatement("SELECT * FROM ERS_USERS WHERE ERS_USER_ID = ?");
+      int userId = Integer.valueOf(request.getParameter("id"));
+      preparedStatement.setInt(1, userId);
 
-    // if (resultSet.next()) {
-    // user.setId(resultSet.getInt("ers_user_id"));
-    // user.setUsername(resultSet.getString("ers_user_name"));
-    // user.setPassword(resultSet.getString("ers_password"));
-    // user.setEmail(resultSet.getString("ers_email"));
-    // user.setFirstname(
-    // resultSet.getString("ers_first_name"));
-    // user.setLastname(resultSet.getString("ers_last_name"));
-    // int roleId = resultSet.getInt("user_role_id");
-    // if (roleId == 1) {
-    // user.setRole(Role.EMPLOYEE);
-    // } else {
-    // user.setRole(Role.FINANCE_MANAGER);
-    // }
-    // }
-    // // convert resultSet to JSON
-    // String userJsonString = new Gson().toJson(user);
+      ResultSet resultSet = preparedStatement.executeQuery();
 
-    // // send json as response
-    // PrintWriter out = response.getWriter();
-    // response.setContentType("application/json");
-    // response.setCharacterEncoding("UTF-8");
-    // out.print(userJsonString);
-    // out.flush();
+      User user = new User();
 
-    // connection.close();
-    // } catch (SQLException e) {
-    // System.out.println("UserServlet.doGet() SQLException: " + e.getMessage());
-    // }
+      if (resultSet.next()) {
+        user.setId(resultSet.getInt("ers_user_id"));
+        user.setUsername(resultSet.getString("ers_user_name"));
+        user.setPassword(resultSet.getString("ers_password"));
+        user.setEmail(resultSet.getString("ers_email"));
+        user.setFirstname(
+            resultSet.getString("ers_first_name"));
+        user.setLastname(resultSet.getString("ers_last_name"));
+        int roleId = resultSet.getInt("user_role_id");
+        if (roleId == 1) {
+          user.setRole(Role.EMPLOYEE);
+        } else {
+          user.setRole(Role.FINANCE_MANAGER);
+        }
+      }
+
+      out.print(user);
+
+      // // convert resultSet to JSON
+      // String userJsonString = new Gson().toJson(user);
+
+      // // send json as response
+      // PrintWriter out = response.getWriter();
+      // response.setContentType("application/json");
+      // response.setCharacterEncoding("UTF-8");
+      // out.print(userJsonString);
+      // out.flush();
+
+      connection.close();
+    } catch (SQLException e) {
+      System.out.println("UserServlet.doGet() SQLException: " + e.getMessage());
+    }
 
   }
 }
