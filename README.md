@@ -48,6 +48,19 @@ how to create a maven webapp
 - mvn compile
 - mvn package
 
+### VSCode(server)
+
+![](./images/Screen%20Shot%202022-04-18%20at%207.02.26%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%207.04.12%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%207.05.03%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%207.05.36%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%207.06.43%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%207.07.03%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%207.07.13%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%207.07.27%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%207.07.42%20PM.png)
+![](./images/Screen%20Shot%202022-04-18%20at%207.08.05%20PM.png)
+
 ### Start Tomcat
 
 ![](./images/Screen%20Shot%202022-04-09%20at%207.00.24%20AM.png)
