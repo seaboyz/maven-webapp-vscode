@@ -72,18 +72,50 @@ how to create a maven webapp
 
 ![](./images/Screen%20Shot%202022-04-18%20at%208.37.21%20PM.png)
 
+### change the context
+
+![](./images/Screen%20Shot%202022-04-19%20at%2011.17.16%20AM.png)
+
+### change the servlet url
+
+![](./images/Screen%20Shot%202022-04-19%20at%2011.21.05%20AM.png)
+
 ### remove war file from server
 
 ![](./images/Screen%20Shot%202022-04-18%20at%208.40.42%20PM.png)
 
-### change the war file name
+### redeploy
+
+`mvn clean compile package`
+
+### change the war file name to api.war
 
 ![](./images/Screen%20Shot%202022-04-19%20at%207.24.16%20AM.png)
+
+### remove war file from server
+
+![](./images/Screen%20Shot%202022-04-18%20at%208.40.42%20PM.png)
+
+### publish full
+
+![](./images/Screen%20Shot%202022-04-19%20at%2011.27.54%20AM.png)
+
+### add deployment
+
+![](./images/Screen%20Shot%202022-04-19%20at%2011.29.18%20AM.png)
+![](./images/Screen%20Shot%202022-04-19%20at%2011.32.10%20AM.png)
+![](./images/Screen%20Shot%202022-04-19%20at%2011.32.18%20AM.png)
+
+### republish
+
+![](./images/Screen%20Shot%202022-04-19%20at%2011.27.54%20AM.png)
 
 #### or set war file name reference artifactid
 
 ![](./images/Screen%20Shot%202022-04-19%20at%207.39.53%20AM.png)
 ![](./images/Screen%20Shot%202022-04-19%20at%207.40.16%20AM.png)
+
+## Platform free version
 
 ### Start Tomcat
 
