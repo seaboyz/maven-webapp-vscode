@@ -72,6 +72,10 @@ how to create a maven webapp
 
 ![](./images/Screen%20Shot%202022-04-18%20at%208.37.21%20PM.png)
 
+# remove war file from server
+
+![](./images/Screen%20Shot%202022-04-18%20at%208.40.42%20PM.png)
+
 ### Start Tomcat
 
 ![](./images/Screen%20Shot%202022-04-09%20at%207.00.24%20AM.png)
