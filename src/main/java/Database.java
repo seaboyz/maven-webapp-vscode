@@ -16,16 +16,12 @@ public class Database {
   }
 
   private static void init() throws SQLException {
-    String dbDriver = "org.postgresql.Driver";
+
     String dbURL = "jdbc:postgresql://training-postgres.ckbqjaef5nqv.us-east-2.rds.amazonaws.com/qianggao-p1";
     String username = "postgres";
     String password = "P4ssw0rd!";
     // load postgresql driver
-    try {
-      Class.forName(dbDriver);
-    } catch (Exception e) {
-      e.printStackTrace();
-    }
+
     connection = DriverManager.getConnection(dbURL, username, password);
   }
 
