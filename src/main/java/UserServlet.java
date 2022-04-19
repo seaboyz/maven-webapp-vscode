@@ -17,6 +17,7 @@ public class UserServlet extends HttpServlet {
 
   public void init(ServletConfig config) throws ServletException {
     super.init(config);
+    // load Driver
     String dbDriver = "org.postgresql.Driver";
     try {
       Class.forName(dbDriver).newInstance();
@@ -39,7 +40,7 @@ public class UserServlet extends HttpServlet {
   protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
 
-    response.getWriter().print(request.getParameter("id"));
+    int userId = Integer.valueOf(request.getParameter("id"));
 
     // try {
     // connection = Database.getConnection();
